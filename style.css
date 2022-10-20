@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    display: grid;
+    grid-template-rows: repeat(3, 440px);
+    width: 85%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        width: unset;
+        grid-template-rows: unset;
+
+    }
+}
+
+
+.card {
+    padding: 45px;
+    font-family: 'Big Shoulders Display';
+}
+
+.card h1 {
+    text-transform: uppercase;
+    padding: 30px 0;
+    color: hsl(0, 0%, 95%);
+}
+
+.card p {
+	font-family: 'Lexend Deca';
+	line-height: 1.6;
+	color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.card a {
+    
+    padding: 20px 30px;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    font-family: 'Lexend Deca';
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: 0.3s;
+    
+}
+
+@media (min-width: 768px) {
+    .card p {
+        margin-bottom: 80px;
+    }
+
+    .card a:hover {
+        background-color: transparent;
+        color: hsl(0, 0%, 95%);
+        
+    }
+}
+
+.card1 {
+    background-color: hsl(31, 77%, 52%);
+}
+.card1 a {
+    color: hsl(31, 77%, 52%);
+    
+}
+
+.card2 {
+    background-color: hsl(184, 100%, 22%);
+}
+.card2 a {
+    color: hsl(184, 100%, 22%);
+}
+
+.card3 {
+    background-color: hsl(179, 100%, 13%);
+}
+.card3 a {
+    color: hsl(179, 100%, 13%);
+}
+
